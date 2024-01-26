@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/01/25 15:30:31.000.110,=C:\Users\delph\OneDrive\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2024/01/25 15:38:40.000.793,C:\Users\delph\OneDrive\Documents\Embarcadero\Studio\Projets\Project1.dproj=C:\Users\delph\OneDrive\Documents\Embarcadero\Studio\Projets\BlocNote.dproj</Transaction>
+    <Transaction>2024/01/25 15:39:12.000.153,C:\Users\delph\OneDrive\Documents\Embarcadero\Studio\Projets\BlocNote.dproj=C:\Users\delph\OneDrive\Documents\Embarcadero\Studio\Projets\TextEditor.dproj</Transaction>
+    <Transaction>2024/01/25 15:40:49.000.690,C:\Users\delph\OneDrive\Documents\Embarcadero\Studio\Projets\Unit1.pas=C:\Users\delph\OneDrive\Documents\Embarcadero\Studio\Projets\TextEditorUnit.pas</Transaction>
+    <Transaction>2024/01/25 15:40:49.000.690,C:\Users\delph\OneDrive\Documents\Embarcadero\Studio\Projets\Unit1.fmx=C:\Users\delph\OneDrive\Documents\Embarcadero\Studio\Projets\TextEditorUnit.fmx</Transaction>
+    <Transaction>2024/01/25 15:40:52.000.439,C:\Users\delph\OneDrive\Documents\Embarcadero\Studio\Projets\TextEditor.dproj=C:\Users\delph\OneDrive\Documents\Embarcadero\Studio\Projets\TextEditor.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
