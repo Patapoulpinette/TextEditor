@@ -8,6 +8,9 @@ object TextEditorForm: TTextEditorForm
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnKeyUp = FormKeyUp
+  OnMouseUp = FormMouseUp
   DesignerMasterStyle = 0
   object StatusBar: TStatusBar
     Position.Y = 478.000000000000000000
@@ -17,14 +20,14 @@ object TextEditorForm: TTextEditorForm
     Size.PlatformDefault = False
     TabOrder = 3
     object ColumnNumber: TLabel
-      Position.X = 180.000000000000000000
+      Position.X = 50.000000000000000000
       Size.Width = 120.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
     end
     object LineCount: TLabel
-      Position.X = 380.000000000000000000
+      Position.X = 100.000000000000000000
       Size.Width = 120.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
@@ -46,6 +49,8 @@ object TextEditorForm: TTextEditorForm
     Size.Height = 478.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 4
+    OnKeyUp = FormKeyUp
+    OnMouseUp = FormMouseUp
     Viewport.Width = 496.000000000000000000
     Viewport.Height = 474.000000000000000000
   end
@@ -127,8 +132,10 @@ object TextEditorForm: TTextEditorForm
     object FormatMenu: TMenuItem
       Text = 'Format'
       object WordWrapMenuItem: TMenuItem
+        Action = WordWrapAction
+        Enabled = True
         Locked = True
-        Text = 'Word wrap'
+        ImageIndex = -1
       end
     end
   end
@@ -147,55 +154,71 @@ object TextEditorForm: TTextEditorForm
       Category = 'File'
       Text = 'New'
       ShortCut = 16462
+      OnExecute = NewActionExecute
     end
     object OpenAction: TAction
       Category = 'File'
       Text = 'Open'
       ShortCut = 16463
+      OnExecute = OpenActionExecute
     end
     object SaveAction: TAction
       Category = 'File'
       Text = 'Save'
       ShortCut = 16467
+      OnExecute = SaveActionExecute
     end
     object SaveAsAction: TAction
       Category = 'File'
       Text = 'Save as'
+      OnExecute = SaveAsActionExecute
     end
     object ExitAction: TAction
       Category = 'File'
       Text = 'Exit'
       ShortCut = 16465
+      OnExecute = ExitActionExecute
     end
     object CutAction: TAction
       Category = 'Edit'
       Text = 'Cut'
       ShortCut = 16472
+      OnExecute = CutActionExecute
     end
     object CopyAction: TAction
       Category = 'Edit'
       Text = 'Copy'
       ShortCut = 16451
+      OnExecute = CopyActionExecute
     end
     object PasteAction: TAction
       Category = 'Edit'
       Text = 'Paste'
       ShortCut = 16470
+      OnExecute = PasteActionExecute
     end
     object SelectAllAction: TAction
       Category = 'Edit'
       Text = 'Select all'
       ShortCut = 16449
+      OnExecute = SelectAllActionExecute
     end
     object UndoAction: TAction
       Category = 'Edit'
       Text = 'Undo'
       ShortCut = 16474
+      OnExecute = UndoActionExecute
     end
     object DeleteAction: TAction
       Category = 'Edit'
       Text = 'Delete'
       ShortCut = 46
+      OnExecute = DeleteActionExecute
+    end
+    object WordWrapAction: TAction
+      Category = 'Format'
+      Text = 'Word wrap'
+      OnExecute = WordWrapActionExecute
     end
   end
 end
